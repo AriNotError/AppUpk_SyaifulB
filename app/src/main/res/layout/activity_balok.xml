@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Balok.Balok"
+    android:background="@color/background_color">
+
+    <soup.neumorphism.NeumorphCardView
+        android:onClick="backToMenu"
+        android:id="@+id/neumorphCardView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/back" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Menghitung Balok"
+        android:textColor="@color/text_color"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphCardView3"
+        app:layout_constraintStart_toEndOf="@+id/neumorphCardView3"
+        app:layout_constraintTop_toTopOf="@+id/neumorphCardView3"
+        app:layout_constraintVertical_bias="0.307" />
+
+
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:text="Panjang       ="
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/bg_layout"
+        android:hint="...."
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView2"
+        app:layout_constraintStart_toEndOf="@+id/txtView2"
+        app:layout_constraintTop_toTopOf="@+id/txtView2"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/txtView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:text="Lebar            ="
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtView2" />
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/bg_layout"
+        android:hint="...."
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView3"
+        app:layout_constraintStart_toEndOf="@+id/txtView3"
+        app:layout_constraintTop_toTopOf="@+id/txtView3"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/txtView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="Tinggi          ="
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtView3" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/bg_layout"
+        android:hint="...."
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView4"
+        app:layout_constraintStart_toEndOf="@+id/txtView4"
+        app:layout_constraintTop_toTopOf="@+id/txtView4"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="78dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Pilih yg akan di hitung"
+        android:textColor="@color/text_color"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView4" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="="
+        android:textColor="@color/text_color"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView"
+        app:layout_constraintStart_toEndOf="@+id/txtView"
+        app:layout_constraintTop_toTopOf="@+id/txtView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.009">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-29dp"
+            tools:layout_editor_absoluteY="43dp">
+
+            <RadioButton
+                android:id="@+id/luas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Luas" />
+
+            <RadioButton
+                android:id="@+id/volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Volume" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/hitung"
+        android:layout_width="187dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="HITUNG"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Jawaban  ="
+        app:layout_constraintBottom_toBottomOf="@+id/hitung"
+        app:layout_constraintStart_toEndOf="@+id/hitung"
+        app:layout_constraintTop_toTopOf="@+id/hitung"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="0"
+        android:textColor="@color/text_color"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.533" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
